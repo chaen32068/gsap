@@ -272,6 +272,21 @@
                 toggleActions: 'play pause reverse none'
             }
         });
+
+        // box4 : start, end
+        gsap.to(box4, {
+            duration: 2,
+            x: 500,
+            rotation: 360,
+            borderRadius: 100,
+            scrollTrigger: {
+                trigger: box4,
+                start: 'top 50%',
+                end: 'bottom 20%',
+                toggleActions: 'play pause reverse none',
+                markers: true
+            }
+        });
     </script>
 </body>
 
